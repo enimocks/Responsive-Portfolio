@@ -11,8 +11,15 @@ a {
     color: #777777;
 }
 
+.logo a {
+    color: #fff;
+}
+
+html, body {
+    height: 100%;
+}
+
 body {
-    width: 100%;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     background: url("../images/circles-light.png")
 }
@@ -54,17 +61,20 @@ nav ul li {
     margin-top: 26px;
 }
 
+nav a:hover {
+    color: #469e9b;
+  }
+
 /* CSS selector reference: https://www.w3schools.com/cssref/css_selectors.asp */
 nav ul li ~ li {
     border-left: 1.25px solid #777777;
 }
 
-/* wrapper for About Me and Contact Info */
+/* About Me and Contact Info */
 .content {
     width: 960px;
     margin: 0 auto;
     clear: both;
-    padding-bottom: 100px;
 }
 
 #headshot {
@@ -151,24 +161,26 @@ textarea {
 }
 
 /* Portfolio (image gallery) */
-section li {
-    float: left;
-    height: 248px;
+section > ul {
+    margin-left: 20px;
 }
 
-section a > img {
-    padding: 1em;
+section li {
+    float: left;
+    margin: 1em;
+    width: 250px;
+    height: 200px;
 }
 
 section h3 {
     color: black;
     text-align: center;
-    padding: 1em 3em;
-    margin: 0 1em;
+    padding: 1em;
     background-color: #4aaaa5;
     color: white;
     position: relative;
-    bottom: 82px;
+    bottom: 67px;
+    width: 100%;
 }
 
 /* Footer */
@@ -184,6 +196,18 @@ footer {
     background-color: #666666;
 }
 
+footer,
+.push {
+    height: 72px;
+}
+
+.wrapper {
+    height: auto !important;
+    height: 100%;
+    min-height: 100%;
+    margin: 0 auto -72px auto;
+  }
+
 @media screen and (max-width: 980px) {
     aside {
         float: none;
@@ -192,6 +216,11 @@ footer {
         display: block;
         margin: 1em auto 0 auto;
         height: 175px;
+        margin-bottom: 1.5em;
+    }
+
+    .container {
+        width: auto;
     }
 
     section {
