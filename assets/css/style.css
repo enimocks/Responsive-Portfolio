@@ -64,6 +64,7 @@ nav ul li ~ li {
     width: 960px;
     margin: 0 auto;
     clear: both;
+    padding-bottom: 100px;
 }
 
 #headshot {
@@ -98,7 +99,6 @@ aside {
     text-align: center;
     width: 270px;
     float: right;
-    display: inline-block;
     background-color: #ffffff;
     border-color: #dddddd;
     padding: 20px;
@@ -182,4 +182,26 @@ footer {
     padding: 2.5em;
     text-align: center;
     background-color: #666666;
+}
+
+@media screen and (max-width: 980px) {
+    aside {
+        float: none;
+        clear: both;
+        width: 650px;
+        display: block;
+        margin: 1em auto 0 auto;
+        height: 175px;
+    }
+
+    section {
+        display: block;
+        margin: 0 auto;
+        float: none;
+        overflow: hidden;
+    }
+
+    aside ul {
+        display: inline-block;
+    }
 }
