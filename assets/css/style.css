@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -100,7 +101,7 @@ section {
     background-color: #ffffff;
     border-color: #dddddd;
     padding: 20px;
-    margin-bottom: 100px;
+    margin-bottom: 1em;
     min-height: 550px;
 }
 
@@ -111,7 +112,7 @@ aside {
     float: right;
     background-color: #ffffff;
     border-color: #dddddd;
-    padding: 20px;
+    padding: 1em;
     line-height: 2;
 }
 
@@ -185,15 +186,13 @@ section h3 {
 
 /* Footer */
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
     font-size: 12px;
     color: lightgrey;
     padding: 2.5em;
     text-align: center;
     background-color: #666666;
+    clear: both;
 }
 
 footer,
@@ -208,7 +207,37 @@ footer,
     margin: 0 auto -72px auto;
   }
 
-@media screen and (max-width: 980px) {
+
+
+@media screen and (max-width: 980px) and (min-width: 769px) {
+    .container,
+    .content {
+        width: 75%;
+    }
+
+    section {
+        width: 60%;
+    }
+
+    section > ul {
+        margin-left: 15px;
+    }
+
+    section li {
+        float: left;
+        margin: 1em 3.5em 1em;
+    }
+
+    aside {
+        margin-left: 1em;
+    }
+    nav {
+        margin-right: 10px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
     aside {
         float: none;
         clear: both;
@@ -219,11 +248,20 @@ footer,
         margin-bottom: 1.5em;
     }
 
+nav {
+    margin-right: 10px;
+}
+
+    .content {
+        width: auto;
+    }
+
     .container {
         width: auto;
     }
 
     section {
+        width: 650px;
         display: block;
         margin: 0 auto;
         float: none;
@@ -233,4 +271,15 @@ footer,
     aside ul {
         display: inline-block;
     }
+}
+
+@media screen and (max-width: 640px) {
+
+
+
+
+
+
+
+
 }
