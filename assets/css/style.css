@@ -208,7 +208,7 @@ footer,
   }
 
 
-
+/* Media queries for screens smaller than 980px, but larger than 769px */
 @media screen and (max-width: 980px) and (min-width: 769px) {
     .container,
     .content {
@@ -231,26 +231,36 @@ footer,
     aside {
         margin-left: 1em;
     }
+
     nav {
         margin-right: 10px;
     }
 
+    nav a {
+        vertical-align: sub;
+    }
+
 }
 
+/* Media queries for screens smaller tahn 768px */
 @media screen and (max-width: 768px) {
     aside {
         float: none;
         clear: both;
-        width: 650px;
+        width: 96%;
         display: block;
         margin: 1em auto 0 auto;
         height: 175px;
         margin-bottom: 1.5em;
     }
 
-nav {
-    margin-right: 10px;
-}
+    nav {
+        margin-right: 10px;
+    }
+
+    nav a {
+        vertical-align: sub;
+    }
 
     .content {
         width: auto;
@@ -261,11 +271,16 @@ nav {
     }
 
     section {
-        width: 650px;
+        width: auto;
         display: block;
         margin: 0 auto;
         float: none;
         overflow: hidden;
+        width: 96%;
+    }
+
+    section hr {
+        margin-bottom: 1em;
     }
 
     aside ul {
@@ -273,13 +288,64 @@ nav {
     }
 }
 
+/* Media queries for screens smaller than 640px */
 @media screen and (max-width: 640px) {
 
+    header {
+        margin: auto;
+        position: static;
+    }
 
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
 
+	nav	{
+		clear: both;
+		width: 100%;
+		text-align: center;
+		float: none;
+        border-bottom: none;
+        background-color: #fff;
+        margin-bottom: 1.5em;
+    }
 
+    nav ul li {
+        min-width: 200px;
+        float: none;
+        display: inline-block;
+    }
 
+    aside {
+        text-align: center;
+        width: 96%;
+    }
 
+    section {
+        width: 96%;
+        margin-top: 1em;
+    }
 
+    section li {
+        float: none;
+        width: auto;
+        height: auto;
+    }
 
+    section li img {
+        width: 525px;
+    }
+
+    .content h3 {
+        width: 525px;
+    }
+
+    aside h3 {
+        width: auto;
+    }
+
+    section hr {
+        margin-bottom: 1em;
+    }
 }
