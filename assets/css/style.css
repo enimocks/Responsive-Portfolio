@@ -207,6 +207,9 @@ footer,
     margin: 0 auto -72px auto;
   }
 
+  section hr {
+      margin-bottom: 1em;
+  }
 
 /* Media queries for screens smaller than 980px, but larger than 769px */
 @media screen and (max-width: 980px) and (min-width: 769px) {
@@ -242,12 +245,12 @@ footer,
 
 }
 
-/* Media queries for screens smaller tahn 768px */
+/* Media queries for screens smaller than 768px */
 @media screen and (max-width: 768px) {
     aside {
         float: none;
         clear: both;
-        width: 96%;
+        width: 95%;
         display: block;
         margin: 1em auto 0 auto;
         height: 175px;
@@ -263,11 +266,11 @@ footer,
     }
 
     .content {
-        width: auto;
+        width: 95%;
     }
 
     .container {
-        width: auto;
+        width: 95%;
     }
 
     section {
@@ -281,6 +284,10 @@ footer,
 
     section hr {
         margin-bottom: 1em;
+    }
+
+    aside {
+        width: 95%;
     }
 
     aside ul {
@@ -301,6 +308,13 @@ footer,
         text-align: center;
     }
 
+    #headshot {
+        float: none;
+        width: 95%; 
+        padding-right: unset;
+        margin: 0 auto;
+    }
+
 	nav	{
 		clear: both;
 		width: 100%;
@@ -312,18 +326,18 @@ footer,
     }
 
     nav ul li {
-        min-width: 200px;
+        width: 32%;
         float: none;
         display: inline-block;
     }
 
     aside {
         text-align: center;
-        width: 96%;
+        width: 95%;
     }
 
     section {
-        width: 96%;
+        width: 95%;
         margin-top: 1em;
     }
 
@@ -334,11 +348,11 @@ footer,
     }
 
     section li img {
-        width: 525px;
+        width: 100%;
     }
 
     .content h3 {
-        width: 525px;
+        width: 100%;
     }
 
     aside h3 {
