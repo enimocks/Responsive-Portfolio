@@ -267,7 +267,7 @@ footer,
     }
 
     .container {
-        width: auto;
+        width: 100%;
     }
 
     section {
@@ -315,6 +315,10 @@ footer,
         min-width: 200px;
         float: none;
         display: inline-block;
+    }
+
+    .container {
+        width: 100%;
     }
 
     aside {
