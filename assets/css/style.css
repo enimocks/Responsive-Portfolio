@@ -109,11 +109,13 @@ section {
 aside {
     text-align: center;
     width: 270px;
-    float: right;
+    display: inline-block;
     background-color: #ffffff;
     border-color: #dddddd;
     padding: 1em;
     line-height: 2;
+    margin-left: 1em;
+    margin-bottom: 1em;
 }
 
 aside ul li {
@@ -130,6 +132,7 @@ aside h3 {
     color: #4aaaa5;
     font-size: 18px;
     font-weight: bold;
+    padding-bottom: 4px;
 }
 
 /* form input element stylings */
@@ -229,10 +232,6 @@ footer,
     section li {
         float: left;
         margin: 1em 3.5em 1em;
-    }
-
-    aside {
-        margin-left: 1em;
     }
 
     nav {
