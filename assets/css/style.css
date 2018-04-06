@@ -114,11 +114,16 @@ aside {
     border-color: #dddddd;
     padding: 1em;
     line-height: 2;
-    margin-left: 1em;
+    margin-left: 2em;
     margin-bottom: 1em;
 }
 
-aside ul li {
+aside > ul {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+aside li {
     float: left;
 }
 
