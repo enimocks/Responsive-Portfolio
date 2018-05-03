@@ -127,6 +127,11 @@ aside li {
     float: left;
 }
 
+a > img {
+    width: 250px;
+    height: 200px;
+}
+
 aside img {
     width: 75px;
     height: auto;
