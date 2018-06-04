@@ -195,6 +195,7 @@ section h3 {
     position: relative;
     bottom: 67px;
     width: 100%;
+    opacity: 0.9;
 }
 
 /* Footer */
